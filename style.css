@@ -33,7 +33,6 @@ body {
   align-items: center;
   padding: 1vw;
   background-color: rgba(0, 0, 0, 0.5);
-  border-bottom: 1px solid #eaeaea;
 }
 
 .navbar .logo {
@@ -41,12 +40,14 @@ body {
   width: auto;                   /* Maintains perfect aspect ratio */
   max-width: 100%;               /* Ensures responsiveness */
   object-fit: contain;           /* Safeguards against stretching if width is forced */
+  margin-right: auto;
 }
 
 .navbar .nav-links {
   display: flex;
   list-style: none;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 24px;
   box-sizing:border-box;
   padding-inline: 20px;
 
@@ -57,11 +58,11 @@ body {
   text-decoration: none;
   color: white;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 14px;
   transition: color 0.2s ease;
-  box-shadow: 0 0 0 2px black, 0 0 0 8px white, 0 0 0 10px black; 
-  padding: 3pt;
-  margin: 3pt;
+  box-shadow: 0 0 0 2px black, 0 0 0 8px white, 0 0 0 10px black;
+  display: inline-block;
+  padding: 5px 12px;
   border-radius: 2pt;
 }
 
@@ -133,66 +134,5 @@ body {
 @media (max-width: 768px) {
   .page-container {
     width: 95vw; /* Expands on mobile devices for readability */
-  }
-}
-.ai-style-change-1 {
-  .navbar .logo& {
-    max-height: 40px;
-    width: auto;
-    object-fit: contain;
-    margin-right: auto;
-    margin-left: 0px;
-  }
-}
-.ai-style-change-2 {
-  .navbar& {
-    flex-wrap: nowrap;
-    padding: 5px 5px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-.ai-style-change-3 {
-  .navbar .nav-links& {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-    gap: 20px;
-    font-size: 14px;
-    margin-left: 0px;
-  }
-}
-.ai-style-change-8 {
-  .navbar .nav-links a& {
-    padding: 5px;
-    margin: 0px;
-    font-size: 14px;
-    padding-left: 12px;
-    padding-right: 12px;
-    display: inline-block;
-  }
-}
-.ai-style-change-9 {
-  .navbar .nav-links a& {
-    padding: 5px;
-    margin: 0px;
-    font-size: 14px;
-    padding-left: 12px;
-    padding-right: 12px;
-    display: inline-block;
-  }
-}
-.ai-style-change-10 {
-  .navbar .nav-links a& {
-    padding: 5px;
-    margin: 0px;
-    font-size: 14px;
-    padding-left: 12px;
-    padding-right: 12px;
-    display: inline-block;
   }
 }
