@@ -1,3 +1,10 @@
+/* Phones don't have Comic Sans, so use the copy the game ships with */
+@font-face {
+  font-family: "Crimpo Comic";
+  src: local("Comic Sans MS"), url("play/fonts/COMIC.TTF") format("truetype");
+  font-display: swap;
+}
+
 /* Reset & Base Styles */
 * {
   box-sizing: border-box;
@@ -6,7 +13,7 @@
 }
 
 body {
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: "Crimpo Comic", "Comic Sans MS", "Comic Sans", cursive;
   color: white;
   display: flex;
   justify-content: center;
