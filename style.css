@@ -136,3 +136,20 @@ body {
     width: 95vw; /* Expands on mobile devices for readability */
   }
 }
+
+/* Play-in-browser button */
+.play-button {
+  display: inline-block;
+  margin: 10px 0 20px;
+  padding: 10px 24px;
+  font-size: 1.4rem;
+  color: white;
+  text-decoration: none;
+  background-color: #ff53dd;
+  border-radius: 1em;
+  box-shadow: 0 0 0 2px black, 0 0 0 8px white, 0 0 0 10px black;
+}
+
+.play-button:hover {
+  background-color: #007aff;
+}
