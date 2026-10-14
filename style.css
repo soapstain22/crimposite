@@ -42,7 +42,7 @@ body {
 }
 
 .page-container {
-  width: 100vmin;
+  width: 100%;
   max-width: 900px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 1em;
@@ -115,22 +115,24 @@ h2, p, .big-button, .social, .navbar .nav-links a, footer {
   background-color: #ff0000;
   display: flex;
   align-items: flex-end;
-  justify-content: center;
+  gap: 8px;
+  padding: 0 4%;
   overflow: hidden;
 }
 
 .hero-crimpo {
-  position: absolute;
-  left: 4%;
-  bottom: -40px;
-  height: 330px;
-  transform: rotate(6deg);
+  flex-shrink: 0;
+  width: 42%;
+  max-width: 330px;
+  height: auto;
+  image-rendering: pixelated;
+  transform: rotate(-3deg);
+  transform-origin: bottom center;
   filter: drop-shadow(4px 4px 0 black);
 }
 
 .hero-middle {
-  position: relative;
-  margin-left: 30%;
+  flex: 1;
   padding: 24px 16px 28px;
   display: flex;
   flex-direction: column;
@@ -306,16 +308,17 @@ footer img {
 
   .hero {
     min-height: 0;
-  }
-
-  .hero-crimpo {
-    height: 190px;
-    left: -10px;
-    bottom: -30px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .hero-middle {
-    margin-left: 28%;
+    padding-bottom: 8px;
+  }
+
+  .hero-crimpo {
+    order: 2;
+    width: 60%;
   }
 
   .big-button {
