@@ -1,40 +1,68 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CRIMPO QUEST</title>
+  <meta name="description" content="crimpo kicks the wizards ass. play it in ur browser or wishlist it on steam.">
+  <link rel="icon" href="play/icon/icon.png" type="image/png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Main Container (Takes up exactly 50% of the page width) -->
-  <div class="page-container">  
-    <!-- Navbar -->
+  <div class="page-container">
+
     <nav class="navbar">
-        <img class="logo" src="crimpoquest.png" alt="">
+      <a href="./"><img class="logo" src="crimpoquest.png" alt="CRIMPO QUEST"></a>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
         <li><a href="play/">Play</a></li>
-        <li><a href="#">Articles</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="https://store.steampowered.com/app/4192470/" target="_blank">Steam</a></li>
+        <li><a href="https://discord.gg/J9tFHs4hfX" target="_blank">Discord</a></li>
       </ul>
     </nav>
 
-    <!-- Sectioned Middle Part -->
+    <header class="hero">
+      <img class="hero-crimpo" src="art/crimpo.png" alt="crimpo">
+      <div class="hero-middle">
+        <img class="starburst" src="art/starburst.png" alt="CRIMPO kicks the wizards ass">
+        <a class="big-button play" href="play/">PLAY NOW</a>
+        <p class="hero-note">free. in ur browser. no download</p>
+      </div>
+    </header>
+
     <main class="middle-section">
-      
-      <article class="article-card">
-        <h2><center>how do i play it</center></h2>
-        <p></p><center>u should wishlist the game on steam so when it comes out you can buy it with money</center><p></p>
-        <center><iframe src="https://store.steampowered.com/widget/4192470/" frameborder="0" width="646" height="190"></iframe></center>
-        <h2><center>but i want to play it now</center></h2>
-        <p></p><center><a class="play-button" href="play/">play it in ur browser</a></center><p></p>
-        <p></p><center><iframe frameborder="0" src="https://itch.io/embed/1094088?bg_color=3f2832&amp;fg_color=ffffff&amp;link_color=ff53dd&amp;border_color=68515b" width="552" height="167"><a href="https://superpizza.itch.io/crimpo-quest">Crimpo Quest by superpizza</a></iframe></center><p></p>
+
+      <article class="article-card tilt-left">
+        <h2>how do i play it</h2>
+        <p>u should wishlist the game on steam so when it comes out you can buy it with money</p>
+        <div class="embed"><iframe src="https://store.steampowered.com/widget/4192470/" frameborder="0" width="646" height="190" title="CRIMPO QUEST on Steam"></iframe></div>
       </article>
 
-      <footer><a href="https://www.indiedb.com/games/crimpo-quest" title="View CRIMPO QUEST on IndieDB" target="_blank"><img src="https://button.indiedb.com/popularity/medium/games/91716.png" alt="CRIMPO QUEST"></a></footer>
+      <article class="article-card tilt-right with-art">
+        <img class="side-art" src="art/wizgrab.png" alt="the wizard grabbing crimpo">
+        <div>
+          <h2>but i want to play it now</h2>
+          <p>ok. it runs right here in the browser. saves stay in ur browser so dont clear it</p>
+          <p><a class="big-button small" href="play/">play it in ur browser</a></p>
+          <p>or get it on itch:</p>
+          <div class="embed"><iframe frameborder="0" src="https://itch.io/embed/1094088?bg_color=3f2832&amp;fg_color=ffffff&amp;link_color=ff53dd&amp;border_color=68515b" width="552" height="167" title="Crimpo Quest on itch.io"><a href="https://superpizza.itch.io/crimpo-quest">Crimpo Quest by superpizza</a></iframe></div>
+        </div>
+      </article>
+
+      <article class="article-card tilt-left socials-card">
+        <h2>join the gang</h2>
+        <p>tell me what goes wrong. or what goes right. whatever</p>
+        <a class="big-button discord" href="https://discord.gg/J9tFHs4hfX" target="_blank">JOIN THE DISCORD</a>
+        <div class="socials">
+          <a class="social youtube" href="https://www.youtube.com/@CrimpoQuest" target="_blank">YouTube</a>
+          <a class="social tiktok" href="https://www.tiktok.com/@crimpoquest" target="_blank">TikTok</a>
+        </div>
+      </article>
+
+      <footer>
+        <a href="https://www.indiedb.com/games/crimpo-quest" title="View CRIMPO QUEST on IndieDB" target="_blank"><img src="https://button.indiedb.com/popularity/medium/games/91716.png" alt="CRIMPO QUEST on IndieDB"></a>
+        <p>made by superpizza</p>
+      </footer>
     </main>
   </div>
 
