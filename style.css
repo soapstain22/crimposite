@@ -325,6 +325,26 @@ footer img {
   }
 }
 
+/* the little guys walking around (ants.js) */
+.ants {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.ant {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 56px;
+  background-image: url("art/walkers.png");
+  image-rendering: pixelated;
+  will-change: transform;
+}
+
 @media (prefers-reduced-motion: reduce) {
   body, .starburst {
     animation: none;
